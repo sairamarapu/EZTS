@@ -7,4 +7,7 @@ for i in range(len(li)):
     else:
         print(i)
         break  '''
+a="sai"
+a=a[::-1]
+print(a)
 
