@@ -1,0 +1,20 @@
+n=3
+a=[[0,0,0],
+   [0,0,0],
+   [0,0,0]]
+x=5
+y=2
+j=0
+count=1
+for i in range(0,3):
+    if(count%2==0):
+        a[y][y-j]=x+count
+        a[0][j]=x-count
+        count=count+1
+        j+1
+    else:
+        a[y][y-j]=x-count
+        a[i][j]=x+count
+        count=count+1
+        j=j+1
+print(a)
