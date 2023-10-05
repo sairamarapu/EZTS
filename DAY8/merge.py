@@ -1,10 +1,9 @@
 def mergesort(a):
+    global c
     if len(a)>1:
         mid=len(a)//2
         left=a[:mid]
-        print(left)
         right=a[mid:]
-        print(right)
         mergesort(left)
         mergesort(right)
         i=j=k=0
@@ -15,6 +14,7 @@ def mergesort(a):
                 k += 1
             else:
                 a[k]=right[j]
+                c+=len(left)-i
                 j += 1
                 k += 1
         while(i<len(left)):
@@ -23,8 +23,10 @@ def mergesort(a):
             k=k+1
         while(j<len(right)):
             a[k]=right[j]
+            c+=len(left)-i
             j=j+1
             k=k+1
+    return c
 a=[12,45,6,89,2,32,21]
-mergesort(a)
-print(a)
+c=0
+print(mergesort(a))
