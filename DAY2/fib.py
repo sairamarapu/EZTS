@@ -16,6 +16,3 @@ while(i<a):
     n1=temp
     i=i+1
 print(n1)
-
-def kadanes(arr): 
-    
