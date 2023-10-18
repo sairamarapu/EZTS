@@ -1,4 +1,4 @@
-'''row=int(input())
+row=int(input())
 col=(2*row)-1
 start,end=row-1,row-1
 for i in range(row):
@@ -14,14 +14,4 @@ for i in range(row):
             print(' ',end=' ')
     print()
     start=start-1
-    end=end+1'''
-def has_number(password):
-      return any(i.isdigit() for i in password)
-import re
-password='@saik'
-regex=re.compile('!@#$%^&*()-+')
-if(regex.search(password)):
-    print(True)
-else:
-    print(False)
-print(has_number(password))
+    end=end+1

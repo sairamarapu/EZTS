@@ -10,4 +10,3 @@ for i in range(row):
     print()
     start=start-1
     end=end+1
-    print(start,end)
